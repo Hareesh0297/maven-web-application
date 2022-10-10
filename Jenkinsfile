@@ -1,4 +1,4 @@
-node {
+node ('main') {
 
 def mavenHome = tool name: "maven3.8.6"
 stage('chcekoutCode'){
