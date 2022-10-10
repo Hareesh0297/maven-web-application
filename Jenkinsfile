@@ -1,9 +1,9 @@
-node {
+node ('main'){
 
 def mavenHome = tool name: "maven3.8.6"
 stage('chcekoutCode'){
 
-git branch: 'Test', credentialsId: '9c8ba476-2469-4e26-b28d-2334cc6bb31e', url: 'https://github.com/Hareesh0297/maven-web-application.git'
+git branch: 'main', credentialsId: '9c8ba476-2469-4e26-b28d-2334cc6bb31e', url: 'https://github.com/Hareesh0297/maven-web-application.git'
 
 }
 stage('Build'){
